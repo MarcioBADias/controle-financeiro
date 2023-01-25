@@ -7,8 +7,7 @@ export const Container = styled.div`
     Color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 90px;
-    padding: 1rem 2rem;
+    padding: 5px 15px;
     width: 30%;
 
     @media (max-width: 750px) {
@@ -29,9 +28,8 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
-    align-items: center;
+    align-item: center
     display: flex;
-    flex-direction: column;
     gap: 10px;
     justify-content: space-around;
     width: 100%

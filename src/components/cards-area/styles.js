@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content: space-around;
     margin: 0 auto;
     max-width: 1024px;
-    margin-top: -50px;
+    margin-top: -35px;
     width: 90vw;
 
     @media (max-width: 500px) {

@@ -2,13 +2,16 @@ import React from 'react';
 
 import * as C from './styles';
 
-const Cards = () => {
+const Cards = ({ title, Icon, value }) => {
     return (
         <C.Container>
             <C.Header>
-                <C.HeaderTitle>Valores:</C.HeaderTitle>
-                <C.Total>1000</C.Total>
+                <C.HeaderTitle>
+                    {title}
+                    <Icon />
+                </C.HeaderTitle>
             </C.Header>
+            <C.Total>{value}</C.Total>
         </C.Container>
     );
 };
