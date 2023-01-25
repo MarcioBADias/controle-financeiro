@@ -1,0 +1,17 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1024px;
+    margin-top: -50px;
+    width: 90vw;
+
+    @media (max-width: 500px) {
+        align-items: center;
+        flex-direction: column;
+        margin-top: -150px;
+    }
+`;
