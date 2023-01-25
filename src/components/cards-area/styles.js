@@ -10,8 +10,6 @@ export const Container = styled.div`
     width: 90vw;
 
     @media (max-width: 500px) {
-        align-items: center;
-        flex-direction: column;
         margin-top: -40px;
     }
 `;
