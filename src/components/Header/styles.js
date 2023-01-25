@@ -1,23 +1,26 @@
 import styled from 'styled-components';
 
+import BackgroundTitle from '../../assets/imgs/header-bg.svg';
+
 export const Container = styled.div`
-    height: 200px;
+    height: 40vh;
     text-align: center;
 
     @media (max-width: 500px) {
-        height: 53vh;
+        height: 30vh;
     }
 `;
 
 export const Header = styled.header`
+    background-image: url(${BackgroundTitle});
     background-color: #9adcff;
+    height: 100%;
 `;
 
 export const Img = styled.img`
-    min-width: 100%;
-    height: 100%;
+    height: 80%;
     
     @media (max-width: 500px) {
-        height: 60vh;
+        height: 65%;
     }
 `;

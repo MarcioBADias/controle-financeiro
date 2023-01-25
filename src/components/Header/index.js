@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Background from '../../assets/imgs/header-arte.svg';
+import TitleArt from '../../assets/imgs/header-title.svg';
 
 
 import * as C from './styles';
@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <C.Container>
             <C.Header>
-                <C.Img src={Background} alt='background "Controle Financeiro"' />
+                <C.Img src={TitleArt} alt='Arte descrevendo "Controle Financeiro"' />
             </C.Header>
         </C.Container>
     );

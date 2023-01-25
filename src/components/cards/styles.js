@@ -28,7 +28,6 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
-    align-item: center
     display: flex;
     gap: 10px;
     justify-content: space-around;

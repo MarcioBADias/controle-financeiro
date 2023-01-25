@@ -8,8 +8,8 @@ const Cards = ({ title, Icon, value }) => {
             <C.Header>
                 <C.HeaderTitle>
                     {title}
-                    <Icon />
                 </C.HeaderTitle>
+                <Icon />
             </C.Header>
             <C.Total>{value}</C.Total>
         </C.Container>
