@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import ResumeArea from "../resume-area";
 
 import * as C from './styles';
 
-const Form = ({ handleAdd }) => {
+const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
     const [desc, setDesc] = useState('');
     const [amount, setAmount] = useState('');
     const [isExpense, setExpense] = useState(false);
@@ -32,23 +33,26 @@ const Form = ({ handleAdd }) => {
     };
 
     return (
-        <C.Container>
-            <C.ImputContent>
-                <C.Label>Descrição</C.Label>
-                <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
-            </C.ImputContent>
-            <C.ImputContent>
-                <C.Label>Valor</C.Label>
-                <C.Input value={amount} type='number' onChange={(e) => setAmount(e.target.value)} />
-            </C.ImputContent>
-            <C.RadioGroup>
-                <C.Input type='radio' id='rIncome' defaultChecked name='group1' onChange={() => setExpense(!isExpense)} />
-                <C.Label htmlFor='rIncome'>Entrada</C.Label>
-                <C.Input type='radio' id='rExpenses' name='group1' onChange={() => setExpense(!isExpense)} />
-                <C.Label htmlFor='rExpenses'>Saída</C.Label>
-            </C.RadioGroup>
-            <C.Button onClick={handleSave}>ADICIONAR</C.Button>
-        </C.Container>
+        <>
+            <C.Container>
+                <C.ImputContent>
+                    <C.Label>Descrição</C.Label>
+                    <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
+                </C.ImputContent>
+                <C.ImputContent>
+                    <C.Label>Valor</C.Label>
+                    <C.Input value={amount} type='number' onChange={(e) => setAmount(e.target.value)} />
+                </C.ImputContent>
+                <C.RadioGroup>
+                    <C.Input type='radio' id='rIncome' defaultChecked name='group1' onChange={() => setExpense(!isExpense)} />
+                    <C.Label htmlFor='rIncome'>Entrada</C.Label>
+                    <C.Input type='radio' id='rExpenses' name='group1' onChange={() => setExpense(!isExpense)} />
+                    <C.Label htmlFor='rExpenses'>Saída</C.Label>
+                </C.RadioGroup>
+                <C.Button onClick={handleSave}>ADICIONAR</C.Button>
+            </C.Container>
+            <ResumeArea itens={transactionsList} setItens={setTransactionsList} />
+        </>
     )
 }
 

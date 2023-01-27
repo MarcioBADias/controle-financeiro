@@ -3,11 +3,10 @@ import Global from './styles/global';
 import Header from './components/Header';
 import CardsArea from './components/cards-area';
 import Form from './components/form';
-import ResumeArea from './components/resume-area';
 
 const App = () => {
     const data = localStorage.getItem('transactions');
-    console.log(data)
+
     const [transactionsList, setTransactionsList] = useState(
         data? JSON.parse(data) : []
         );
@@ -16,13 +15,13 @@ const App = () => {
         const [total, setTotal] = useState(0);
         
         useEffect(() => {
-            const amountExpense = transactionsList.
-            filter(item => item.expense).
-            map(transition => Number(transition.amount));
+            const amountExpense = transactionsList
+            .filter(item => item.expense)
+            .map(transition => Number(transition.amount));
             
-            const amountIncome = transactionsList.
-            filter(item => !item.expense).
-            map(transition => Number(transition.amount));
+            const amountIncome = transactionsList
+            .filter(item => !item.expense)
+            .map(transition => Number(transition.amount));
             
             const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).toFixed(2);
             const income = amountIncome.reduce((acc, cur) => acc + cur, 0).toFixed(2);
@@ -41,15 +40,17 @@ const App = () => {
         
         localStorage.setItem('transactions', JSON.stringify(newArrayTransactions));
     };
-    console.log(transactionsList)
 
     return (
         <>
-        <Header />
-        <CardsArea income={income} expense={expense} total={total} />
-        <Form handleAdd={handleAdd} />
-        <ResumeArea />
-        <Global/>
+            <Header />
+            <CardsArea income={income} expense={expense} total={total} />
+            <Form 
+                handleAdd={handleAdd} 
+                transactionsList={transactionsList} 
+                setTransactionsList={setTransactionsList}
+            />
+            <Global/>
         </>
     )
 };
