@@ -9,12 +9,12 @@ import {
     FaDollarSign
 } from 'react-icons/fa';
 
-const CardsArea = () => {
+const CardsArea = ({ income, expense, total }) => {
     return (
         <C.Container>
-            <Cards title='Entradas' Icon={FaRegArrowAltCircleUp} value='1000'/>
-            <Cards title='Saídas' Icon={FaRegArrowAltCircleDown} value='1000'/>
-            <Cards title='Subtotal' Icon={FaDollarSign} value='1000'/>
+            <Cards title='Entradas' Icon={FaRegArrowAltCircleUp} value={income} />
+            <Cards title='Saídas' Icon={FaRegArrowAltCircleDown} value={expense} />
+            <Cards title='Subtotal' Icon={FaDollarSign} value={total} />
         </C.Container>
     )
 }
