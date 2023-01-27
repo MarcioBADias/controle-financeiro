@@ -44,6 +44,11 @@ export const HeaderTitle = styled.p`
 `;
 
 export const Total = styled.span`
+    text-align: center;
     font-size: 30px;
     fonst-weigth: bold;
+
+    @media (max-width: 500px) {
+        font-size: 20px;
+    }
 `;

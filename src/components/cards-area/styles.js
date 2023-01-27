@@ -10,6 +10,6 @@ export const Container = styled.div`
     width: 90vw;
 
     @media (max-width: 500px) {
-        margin-top: -40px;
+        margin-top: -50px;
     }
 `;
