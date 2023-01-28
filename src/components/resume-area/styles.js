@@ -6,7 +6,7 @@ export const Table = styled.table`
     color: #333;
     margin: 3rem auto;
     margin-botton: 0;
-    heigth:60vh;
+    min-heigth: 60vh;
     padding: 1rem;
     max-width: 1024px;
     text-align: center;
