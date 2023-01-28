@@ -37,8 +37,9 @@ export const RadioGroup = styled.div`
     display: flex;
     align-items: center;
 
-    input: {
-        margin: 20px;
+    input {
+        margin-left: 20px;
+        margin-right: 5px;
         accent-color: black;
         margin-top: 0;
     }
