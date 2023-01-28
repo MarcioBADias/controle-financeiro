@@ -4,7 +4,8 @@ export const Table = styled.table`
     background-color: #fbf2a2;
     border-radius: 10px 10px 0 0;
     color: #333;
-    margin: 3rem auto 0 auto;
+    margin: 3rem auto;
+    margin-botton: 0;
     heigth:30vh;
     padding: 1rem;
     max-width: 1024px;
