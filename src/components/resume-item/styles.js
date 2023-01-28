@@ -8,7 +8,7 @@ export const Td = styled.td`
     word-break: break-all;
 
     svg {
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
     }
 `;
