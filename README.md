@@ -1,10 +1,12 @@
 # Controle Financeiro Pessoal
 Este é um aplicativo simples de controle financeiro que permite ao usuário anotar entradas e saídas de valores, calcular um saldo e salvar essas informações em uma área de registros.
 
+<img scr="https://www.canva.com/design/DAFYrZsFlto/b7PmAtoaoeF0Z8jeo1Et7w/view?utm_content=DAFYrZsFlto&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" ></img>
+
 ## Tecnologias Usadas
-- <React>
-- <LocalStorage>
-- <Javascript> (filter, map, reduce)
+- React;
+- LocalStorage;
+- Javascript (filter, map, reduce)
 - [Styled Components](https://styled-components.com/)
 
 ## Funcionalidades
