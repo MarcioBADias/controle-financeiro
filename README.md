@@ -1,70 +1,190 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>README</h1>
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
 
-## Available Scripts
 
-In the project directory, you can run:
+New chat
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Marcius Dev
+Preciso de um Readme para falar do meu primeiro projeto usando React, o projeto é um aplicativo de controle financeiro que busca anotar entradas e saídas de valores para calcular um saldo como balanço do usuário e tem a opção de salvar essas informações em uma área de registros de entradas ou saídas de valores. Eu usei o localStorage para armazenar um Array de objetos que guarda essas informações e deixa salvas na tela do usuário e para filtrar os valores individualmente e alimentar esse array, com as informações do input eu filtro o tipo de entrada com um método filter, colho só os valores com o map e faço a soma deles com o reduce em um valor único que serve de referência para calcular receitas menos despesas. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+README
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
 
-### `npm test`
+Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Filtro de entradas e saídas individuais
+Cálculo de receitas e despesas
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+É possível filtrar as entradas e saídas individuais e calcular as receitas e despesas através de métodos de filtragem, map e reduce.
+Espero que você aproveite o aplicativo!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Marcius Dev
+Eu não criei um filtro para o usuário, eu uso o filter, com o map e reduce para parte da minha lógica para pegar as informações lançadas e calcular o saldo. Refaça o readme com base nisso por favor?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+README
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
 
-### `npm run eject`
+Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Cálculo de receitas e despesas
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+Lógica de filtragem, map e reduce são utilizadas para pegar as informações lançadas e calcular o saldo.
+Espero que você aproveite o aplicativo!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Marcius Dev
+Insira por favor que é possível remover algum lançamento com um click no item na área onde fica o histórico de lançamentos?
 
-## Learn More
+README
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Cálculo de receitas e despesas
+Remoção de lançamentos individualmente com um clique no item na área de histórico de lançamentos
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Você pode remover algum lançamento individualmente clicando no item na área de histórico de lançamentos.
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+Lógica de filtragem, map e reduce são utilizadas para pegar as informações lançadas e calcular o saldo.
+Espero que você aproveite o aplicativo!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Marcius Dev
+Insira o link de deploy para visualizar o site ?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Link abaixo:
 
-### Making a Progressive Web App
+https://controle-financeiro-pessoal-simples.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+README
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
 
-### Advanced Configuration
+Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Cálculo de receitas e despesas
+Remoção de lançamentos individualmente com um clique no item na área de histórico de lançamentos
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Você pode remover algum lançamento individualmente clicando no item na área de histórico de lançamentos.
+Deploy
+O aplicativo está disponível para uso no link abaixo:
+https://controle-financeiro-pessoal-simples.netlify.app/
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+Lógica de filtragem, map e reduce são utilizadas para pegar as informações lançadas e calcular o saldo.
+Espero que você aproveite o aplicativo!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Marcius Dev
+Gostaria de descrever minha experiência com o projeto dizendo que achei incrível a forma que o React trabalha com componentização e que entendendo isso pude dividir o projeto em pastas separadas para seus componentes fazendo assim uma leitura mais limpa do código. Quero resolver que usei a Lib styles components e que isso me facilitou muito a vida para usar o CSS no React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+README
+Este é um aplicativo de controle financeiro desenvolvido em React. Ele permite que o usuário anote entradas e saídas de valores, calculando automaticamente um saldo (balanço) e armazenando essas informações em um registro.
+
+Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Cálculo de receitas e despesas
+Remoção de lançamentos individualmente com um clique no item na área de histórico de lançamentos
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Styled Components (Lib)
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Você pode remover algum lançamento individualmente clicando no item na área de histórico de lançamentos.
+Deploy
+O aplicativo está disponível para uso no link abaixo:
+https://controle-financeiro-pessoal-simples.netlify.app/
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+Lógica de filtragem, map e reduce são utilizadas para pegar as informações lançadas e calcular o saldo.
+O projeto foi dividido em pastas separadas para componentes, tornando a leitura do código mais limpa.
+A Lib de Styled Components foi utilizada para facilitar a manipulação de CSS no React.
+Como desenvolvedor, posso dizer que minha experiência com o React foi incrível, especialmente com a componentização. Entender como dividir o projeto em componentes separados e usar a Lib de Styled Components me permitiu trabalhar de maneira mais eficiente e organizada.Funcionalidades
+Anotação de entradas e saídas de valores
+Cálculo automático do saldo
+Armazenamento de informações em um registro (localStorage)
+Cálculo de receitas e despesas
+Remoção de lançamentos individualmente com um clique no item na área de histórico de lançamentos
+Tecnologias utilizadas
+React
+JavaScript
+localStorage
+Styled Components (Lib)
+Como usar
+Faça o clone do repositório
+Instale as dependências com o comando npm install
+Inicie o aplicativo com o comando npm start
+Anote suas entradas e saídas de valores e veja o saldo ser atualizado automaticamente. As informações serão armazenadas em um registro que pode ser acessado a qualquer momento.
+Você pode remover algum lançamento individualmente clicando no item na área de histórico de lançamentos.
+Deploy
+O aplicativo está disponível para uso no link abaixo:
+https://controle-financeiro-pessoal-simples.netlify.app/
+Observações
+O aplicativo usa o localStorage para armazenar as informações, portanto elas ficarão disponíveis mesmo após fechar o navegador.
+Lógica de filtragem, map e reduce são utilizadas para pegar as informações lançadas e calcular o saldo.
+O projeto foi dividido em pastas separadas para componentes, tornando a leitura do código mais limpa.
+A Lib de Styled Components foi utilizada para facilitar a manipulação de CSS no React.
+Como desenvolvedor, posso dizer que minha experiência com o React foi incrível, especialmente com a componentização. Entender como dividir o projeto em componentes separados e usar a Lib de Styled Components me permitiu trabalhar de maneira mais eficiente e organizada.
