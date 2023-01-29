@@ -51,5 +51,12 @@ export const Button = styled.button`
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    background-color: #9adcff;
+    background-color: #5da9d1;
+    transition: background-color 0.3s ease;
+
+    button:active {
+      background-color: #9ADCFF;
+      transition: background-color 0.3s ease;
+}
+
 `;
